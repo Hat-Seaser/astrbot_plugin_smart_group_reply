@@ -27,13 +27,13 @@ class SmartGroupReply(Star):
 
         # 你的 QQ 大号
         self.admin_ids = {
-            "2677518198",
+            "XXX",
         }
 
         # 只在这些群启用主动回复概率
         self.group_ids = {
-            "1030457369",
-            "797597585", 
+            "XXX",
+            "XXX", 
         }
 
         # 管理员主动回复概率
