@@ -1,0 +1,9 @@
+name: astrbot_plugin_smart_group_reply
+display_name: 智能群聊优先回复
+short_desc: 根据发言人身份和概率控制群聊主动回复。
+desc: 让指定用户高概率触发主动回复，其他群友低概率参与，不额外调用大模型。
+version: 1.0.0
+author: Hat-Seaser
+support_platforms:
+  - aiocqhttp
+astrbot_version: ">=4.27,<5"
