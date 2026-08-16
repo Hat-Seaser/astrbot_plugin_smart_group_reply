@@ -91,7 +91,7 @@ class SmartGroupReply(Star):
             return
 
         event.is_wake = True
-        event.should_call_llm(True)
+        event.is_at_or_wake_command = True
 
         self.last_wake_time[group_id] = now
 
