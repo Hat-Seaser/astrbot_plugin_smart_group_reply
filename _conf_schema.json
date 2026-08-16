@@ -1,0 +1,62 @@
+{
+  "admin_ids": {
+    "type": "list",
+    "description": "高优先级用户QQ号",
+    "hint": "这些QQ号发言时使用管理员主动回复概率。",
+    "items": {
+      "type": "string"
+    },
+    "default": [
+      "2677518198"
+    ]
+  },
+  "group_ids": {
+    "type": "list",
+    "description": "启用群聊",
+    "hint": "只有这些群会启用主动回复概率控制。留空则不限制群。",
+    "items": {
+      "type": "string"
+    },
+    "default": [
+      "797597585"
+    ]
+  },
+  "admin_probability": {
+    "type": "float",
+    "description": "管理员主动回复概率",
+    "hint": "0到1之间。1表示100%。",
+    "default": 0.95,
+    "slider": {
+      "min": 0,
+      "max": 1,
+      "step": 0.01
+    }
+  },
+  "member_probability": {
+    "type": "float",
+    "description": "普通群友主动回复概率",
+    "hint": "0到1之间。",
+    "default": 0.10,
+    "slider": {
+      "min": 0,
+      "max": 1,
+      "step": 0.01
+    }
+  },
+  "cooldown_seconds": {
+    "type": "float",
+    "description": "群聊主动唤醒冷却时间",
+    "hint": "防止短时间连续触发。",
+    "default": 5.0,
+    "slider": {
+      "min": 0,
+      "max": 60,
+      "step": 1
+    }
+  },
+  "enabled": {
+    "type": "bool",
+    "description": "启用插件",
+    "default": true
+  }
+}
