@@ -7,7 +7,7 @@
       "type": "string"
     },
     "default": [
-      "2677518198"
+      "XXX"
     ]
   },
   "group_ids": {
@@ -18,7 +18,7 @@
       "type": "string"
     },
     "default": [
-      "797597585"
+      "XXX"
     ]
   },
   "admin_probability": {
